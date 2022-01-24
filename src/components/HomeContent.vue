@@ -2,6 +2,12 @@
   <div class="next-steps">
     <h2 class="my-5 text-center">What can I do next?</h2>
 
+    <div>
+      <h2 v-if="$auth.isAuthenticated">Welcome to your dashboard</h2>
+    <h2 v-else>Click the button to login</h2>
+
+    </div>
+
     <div class="row">
       <div class="col-md-5 mb-4">
         <h6 class="mb-3">
